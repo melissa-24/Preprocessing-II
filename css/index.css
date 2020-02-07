@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 .center {
   margin: auto;
 }
@@ -196,6 +201,17 @@ img {
   padding: 2em;
   color: black;
   text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+  .navigation nav {
+    font-size: 1.5rem;
+  }
+  .navigation nav a {
+    padding: 1em;
+  }
 }
 .footer {
   width: 100%;
@@ -272,4 +288,36 @@ img {
   font-size: 2rem;
   padding: 0.5em;
   border-radius: 20%;
+}
+@media only screen and (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+  }
+  .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-section .text-content p {
+    width: 200%;
+  }
+  .content-section .img-content {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .content-section .img-content img {
+    width: 100%;
+  }
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .content-pick {
+    flex-direction: column;
+  }
+  .content-pick p {
+    width: 200%;
+  }
+  .content-pick .btn {
+    width: 200%;
+  }
 }
